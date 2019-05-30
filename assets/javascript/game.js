@@ -30,6 +30,7 @@ function initalizeGame() {
     var randomWord = wordArray[randomNumber]; //picking our random word from the word array;
     gameState.word = randomWord;
     gameState.lettersLeft = randomWord.length;
+    gameState.guessesLeft = 10;
     startPrompt.style.display = "none";
     winText.textContent = gameState.wins.toString();
     guessText.textContent = gameState.guessesLeft.toString();
