@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" >
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+
+        </header>
+            <img src="assets/images/gotlogo.jpeg" alt="logo" id="headerLogo">
+        <section id="main">
+            <div class="leftBox">
+                <div class="funnyImage">
+                    <img id="thronesImage" alt="correct or incorrect image">
+                </div>
+            </div>
+            <div class="rightBox">
+                <h2 id="startPrompt"> Press any key to begin! </h1>
+                <h2>Wins: <span id="winText"> </span></h2>
+                <h2>Guesses left: <span id="guessText"> </span></h2>
+                <h2 class="currentWordText">Current word</h2>
+                <div id="currentWordHint">
+
+                </div>
+                <h2>Letters guessed</h2>
+                <div id="lettersGuessed">
+
+                </div>
+                <div class="buttonDiv">
+                    <button id="resetButton">Reset</button>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
