@@ -25,3 +25,4 @@ If the word is correctly guessed, the user will be alerted that they have won an
 wins will increase by 1. 
 If the word can not be guessed in 10 tries, the user will be alerted that they have lost, the number of wins will remain the same, and a new game with a new word will start. 
 If the user wishes to restart the game, they may press the reset button and this will reset all the stats of the game and the number of wins will return to 0.
+If the user presses an invalid key (any key that has already been pressed or any key other than a letter) the user will be alerted they have chosen an invalid key.

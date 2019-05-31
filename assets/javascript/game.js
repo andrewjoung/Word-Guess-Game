@@ -73,7 +73,9 @@ document.onkeyup = function(event) {
     if(!gameState.playing) {
        initalizeGame();
     } else { //when the game is started 
-        if(gameState.alreadyGuessed.indexOf(event.key) === -1) { //if the letter has not already been guessed
+        //if the letter has not already been guessed
+        //and if the key pressed is a letter
+        if(gameState.alreadyGuessed.indexOf(event.key) === -1 && event.keyCode >= 65 && event.keyCode <= 90) { 
             gameState.alreadyGuessed.push(event.key); //add the letter to already guessed array
             guessedLetter = event.key;
             if(gameState.word.includes(guessedLetter)) { //if the user guesses the letter correctly         
@@ -97,7 +99,7 @@ document.onkeyup = function(event) {
                 thronesImage.src = "assets/images/incorrect.jpeg";
             }
         } else {
-            alert("You already guessed this letter!"); //alert the user that the letter has been guessed already;
+            alert("Invalid key!"); //alert the user that the letter has been guessed already;
         }
     }
 
