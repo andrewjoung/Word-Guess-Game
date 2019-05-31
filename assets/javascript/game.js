@@ -24,9 +24,8 @@ var gameState = {
     lettersLeft: 1, //initalize to 1 so that the game doesnt think the user has won at the beginning of every new game
     playing: false,
     alreadyGuessed: [],
-    reset: function() { //resets the state of the game 
+    reset: function() { //resets the state of the game except for number of wins, we have to do this manually
         this.word = "";
-        this.wins = 0;
         this.playing = false;
         this.guessesLeft = 10;
         this.alreadyGuessed = [];
@@ -58,6 +57,7 @@ function clearBoard() {
 
 //add event listener that will reset the game if the reset button is clicked 
 resetButton.addEventListener("click", function() {
+    gameState.wins = 0;
     gameState.reset();
     startPrompt.style.display = "block";
     clearBoard();
