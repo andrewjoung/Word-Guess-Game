@@ -27,6 +27,7 @@ var gameState = {
     reset: function() { //resets the state of the game 
         this.word = "";
         this.wins = 0;
+        this.playing = false;
         this.guessesLeft = 10;
         this.alreadyGuessed = [];
     }
