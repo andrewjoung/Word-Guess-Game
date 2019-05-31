@@ -1,6 +1,7 @@
 body {
     background-image:url('../images/background.jpg');
     font-family: 'Cinzel', serif;
+    padding-top:20px;
 }
 
 h2 {
@@ -77,6 +78,10 @@ img {
     font-size: 30px;
 }
 
+#winText, #guessText, .letterDiv, .guessedLetterDiv {
+    color: #646f78;
+}
+
 #headerLogo {
     height: 100px;
     width: 100%;
@@ -88,4 +93,16 @@ img {
     width:90%;
     margin:10px auto;
     height:230px;
+}
+
+#resetButton {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    color: #004db2;
+    background-color: white;
+    box-shadow: 5px 5px 15px #0000004d;
 }
